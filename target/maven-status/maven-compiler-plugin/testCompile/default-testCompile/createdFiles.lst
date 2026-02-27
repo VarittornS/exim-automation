@@ -1,0 +1,5 @@
+test\java\stepdefinitions\LoginSteps.class
+test\java\stepdefinitions\CheckoutSteps.class
+test\java\stepdefinitions\ProductSteps.class
+test\java\stepdefinitions\EmployeeApiSteps.class
+test\java\testrunner\TestRunner.class
