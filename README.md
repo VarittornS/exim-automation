@@ -1,8 +1,8 @@
-# 🚀 QA Automation Project: E-Commerce UI & Employee API
+# QA Automation Project: E-Commerce UI & Employee API
 
 This repository contains a comprehensive automation testing suite covering both **Frontend (UI)** and **Backend (API)** for the QA Practice platform.
 
-## 🛠 Tech Stack
+##  Tech Stack
 * **Language:** Java 17
 * **Testing Framework:** Cucumber BDD with JUnit
 * **UI Automation:** Selenium WebDriver & WebDriverManager
@@ -12,7 +12,7 @@ This repository contains a comprehensive automation testing suite covering both 
 
 ---
 
-## 🏗 Project Structure
+## Project Structure
 The project follows the standard Maven and Cucumber structure for scalability:
 * **`src/test/resources/features`**: Gherkin feature files for UI and API.
 * **`src/test/java/stepdefinitions`**: Implementation of test steps using Selenium and Rest-Assured.
@@ -20,7 +20,7 @@ The project follows the standard Maven and Cucumber structure for scalability:
 
 ---
 
-## 🧪 Test Coverage
+## Test Coverage
 
 ### 1. UI Automation (Selenium)
 Focuses on the end-to-end e-commerce flow:
@@ -40,7 +40,7 @@ Tests the Employee Management system hosted on Docker:
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ### 1. Start the API Server
 Execute the following command to run the backend container via Docker:
@@ -55,5 +55,5 @@ mvn test
 
 Note: You can filter tests using tags like @UI or @API in the TestRunner.java class.
 
-## 📊 Test Results
+## Test Results
 Upon completion, a comprehensive HTML report is generated at: target/cucumber-reports.html
