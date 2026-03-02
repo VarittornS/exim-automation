@@ -22,11 +22,13 @@ public class LoginSteps {
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
             options.addArguments("--window-size=1920,1080");
+            options.addArguments("--proxy-server='direct://'");
+            options.addArguments("--proxy-bypass-list=*");
 
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);
         }
-        
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         driver.get("https://qa-practice.razvanvancea.ro/auth_ecommerce.html");
     }
