@@ -6,7 +6,7 @@ This repository contains a comprehensive automation testing suite covering both 
 * **Language:** Java 17
 * **Testing Framework:** Cucumber BDD with JUnit
 * **UI Automation:** Selenium WebDriver & WebDriverManager
-* **API Automation:** Rest-Assured & JSON
+* **API Automation:** Rest-Assured & JSON 
 * **Environment:** Docker Desktop (API Server)
 * **CI/CD:** GitHub Actions
 
