@@ -16,15 +16,18 @@ public class LoginSteps {
 
     @Given("I open the e-commerce page")
     public void openPage() {
-        // Initialize WebDriver only if it hasn't been created yet
         if (driver == null) {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless=new");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--window-size=1920,1080");
+
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
+            driver = new ChromeDriver(options);
         }
-        // Set wait timeout to 15 seconds
+        
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        // Navigate to the target website URL
         driver.get("https://qa-practice.razvanvancea.ro/auth_ecommerce.html");
     }
 
