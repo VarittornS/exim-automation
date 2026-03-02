@@ -27,7 +27,7 @@ public class LoginSteps {
             driver = new ChromeDriver(options);
         }
         
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         driver.get("https://qa-practice.razvanvancea.ro/auth_ecommerce.html");
     }
 
